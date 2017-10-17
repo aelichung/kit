@@ -31,3 +31,6 @@ p {font-size: 16px;
   min-height: 1px;
   margin: 0 2% 20px;
 }
+h1.slow.animated {
+  animation-duration: 3s;
+}
