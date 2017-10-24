@@ -51,6 +51,17 @@ h1.slow.animated {
   .one-half {
     width: 46%;
   }
+  blockquote {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 525px) {
+  .testimony {
+    max-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 1024px ) {
   .container {
@@ -159,8 +170,11 @@ header .hero img{
   text-decoration: none;
   padding: 10 px 30px;
   background: #2ecc71;
-  border: 2px solid #2ecc71;
+  border: 10px solid #2ecc71;
   box-shadow: 0px 2px 0px 0px #22894e;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-logo > img{
@@ -217,7 +231,10 @@ header .hero img{
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   min-height: 439px;
   position: relative;
-  margin-top: 25px;
+  max-width:400px;
+  margin-top:25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .box.middle {
   min-height: 485px;
@@ -288,7 +305,7 @@ header .hero img{
   background: #34495e;
   position: relative;
   padding: 30px;
-  width: auto;
+  max-width: 400px;
   margin: 0;
 }
 .testimonials blockquote::after {
@@ -334,13 +351,30 @@ header .hero img{
   position: relative;
   top: 20px;
 }
+.sign-up {
+  text-align: center;
+}
+.sign-up ul{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+.btn-outline {
+  list-style-type: none;
+  text-align: center;
+}
+.btn-outline a{
+  color: #FFF;
+}
+
 /*FOOTER*/
 footer {
   background-color:#34495E;
   background-image: linear-gradient(to top,
     #3498dB 0%, #3498dB 50%, #34495e 50%, #34495e 100%);
     color: #FFF;
-    height: 150px;
+    height: 100px;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -349,7 +383,6 @@ footer p, footer nav ul {
   font-size: 14px;
   font-weight: 100;
   text-align: center;
-  margin: 10px auto 0;
 }
 footer nav ul li {
   list-style-type: none;
@@ -361,11 +394,36 @@ footer nav ul li a {
 }
 footer .right-footer-block {
   background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+  /*height: 100px;*/
 }
 footer .logo{
-  padding: 2.35em 0;
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   display: block;
+  padding-top: 5%;
+}
+footer .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.logo {
+  width: 100px;
+  margin-right: 0px;
+  padding-right: 0px;
+  float: right;
+}
+.middle-footer-block {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.footer-nav-block {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer .one-third {
+  width: 29.33%;
 }
 /* Footer media queries*/
 @media (min-width:992px){
@@ -385,8 +443,87 @@ footer .logo{
   footer .right-footer-block {
     background-color: #3498DB;
   }
-  footer .logo{
+
+  /*footer .logo{
     padding: 0;
-    text-align: right;
-  }
+  }*/
+}
+@media (max-width: 800px){
+.footer-nav-block {
+  margin-bottom: -5px;
+}
+.middle-footer-block {
+  margin-bottom: -5px;
+}
+footer .one-third {
+  width: 100%;
+}
+footer {
+  height: auto;
+}
+footer .right-footer-block{
+  align-self: center;
+}
+footer .logo {
+  padding-top: -50%;
+  padding-right: 45%;
+}
+/* Dashboard */
+.dashboard {
+  background: #F7f7f7;
+}
+.left-nav {
+  height: 100vh;
+  width: 14.66667%;
+  color: #FFF;
+  background: #34495E;
+  background-image: linear-gradient()206deg, #5f81a3 0%,#34495E 94%);
+  float: left;
+  position: fixed;
+  display: block;
+}
+.left-nav .site-logo {
+  padding: 20px 0;
+  background: #34495E;
+  display: block;
+  text-align: center;
+}
+.left-nav .items {
+  padding: 0 6%;
+}
+.left-nav .items p {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #E2e2e2;
+  line-height: 15px;
+}
+.left-nav .items ul {
+  margin: 0 0 40px;
+  padding: 0;
+}
+.left-nav .items ul li {
+  list-style-type: none;
+  margin-bottom: 15px
+}
+.left-nav .items ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 100;
+}
+.left-nav .items ul li a 1 {
+  width: 16px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+/* LEFT NAVBAR settings */
+.left-nav .settings {
+  position: absolute;
+  background: #22303E;
+  width: 100%
+  bottom: 0;
+  left: 0;
+  right: 0;
+
 }
