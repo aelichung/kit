@@ -448,7 +448,7 @@ footer .one-third {
     padding: 0;
   }*/
 }
-@media (max-width: 800px){
+@media (max-width: 992px){
 .footer-nav-block {
   margin-bottom: -5px;
 }
